@@ -1,4 +1,5 @@
 # SheRise
+<<<<<<< HEAD
 
 **The world's most comprehensive women's career, safety, and financial empowerment platform.**
 
@@ -84,3 +85,6 @@ cd client && npm run build
 ---
 
 *Every woman deserves a career, a voice, and a future she owns.*
+=======
+A Powerful Women empowerment tool
+>>>>>>> d60ff2ba79476f5ddbec6c4f7459ddce576d89e3
