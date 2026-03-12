@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  /* SheRise design language */
+  --color-black: #0a0a0a;
+  --color-offwhite: #f5f0e8;
+  --color-gold: #c9a84c;
+  --color-rose: #b5485d;
+  --color-emerald: #1a3a2a;
+  --color-cream: #f5f0e8;
+  --color-charcoal: #111;
+  --font-display: "Playfair Display", serif;
+  --font-subhead: "Cormorant Garamond", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/* Base & accessibility */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background-color: var(--color-black);
+  color: var(--color-offwhite);
+}
+
+/* Custom cursor - rose gold dot (optional, can disable for a11y) */
+@media (pointer: fine) {
+  body.she-cursor .cursor-dot {
+    width: 10px;
+    height: 10px;
+    background: var(--color-rose);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+  }
+}
+
+/* High contrast mode */
+body.high-contrast {
+  --color-offwhite: #fff;
+  --color-gold: #ffd700;
+  --color-rose: #ff6b6b;
+}
+
+/* Light mode (luxury cream/gold) */
+html.light body { background-color: #f5f0e8; color: #0a0a0a; }
+html.light .bg-\[\#0a0a0a\] { background-color: #f5f0e8; }
+html.light .text-\[\#f5f0e8\] { color: #0a0a0a; }
+html.light .text-\[\#f5f0e8\/80\] { color: rgba(10,10,10,0.8); }
+html.light .border-white\/10 { border-color: rgba(0,0,0,0.1); }
+
+/* Font size adjuster */
+body.font-large { font-size: 1.125rem; }
+body.font-xlarge { font-size: 1.25rem; }
+
+/* Diagonal section divider */
+.section-diagonal { clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%); }
+
+/* Focus visible for a11y */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.75rem 1.5rem;
+  background: var(--color-gold);
+  color: var(--color-black);
+  font-weight: 600;
+  z-index: 10000;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 1rem;
+}

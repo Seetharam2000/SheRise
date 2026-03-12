@@ -1,0 +1,18 @@
+{
+  "name": "SheRise",
+  "short_name": "SheRise",
+  "description": "Women's career, safety, and financial empowerment platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#c9a84c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
