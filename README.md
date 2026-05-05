@@ -1,7 +1,7 @@
 # SheRise
 <<<<<<< HEAD
 
-**The world's most comprehensive women's career, safety, and financial empowerment platform.**
+**The world's most comprehensive women's career, safety, and financial empowerment platform with enhanced safety.**
 
 Design: Gucci-inspired luxury aesthetic — dark cinematic backgrounds (#0a0a0a, #111), cream/gold serif typography (Playfair Display, Cormorant Garamond), glassmorphism cards, Framer Motion animations, full-bleed hero, editorial layouts.
 
